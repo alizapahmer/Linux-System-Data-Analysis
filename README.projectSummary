@@ -1,0 +1,20 @@
+Data Sets Used: 1. NYC Dog Registeration data   2. NYC Crime Reports 
+
+Using these data sets, I tested for a correlation between the amount of dogs in an area and the amount of robberies that took place in the same area. I hypothosized that there would be an inverse coorelation- the more dogs, the less thefts. Additionally, a test was performed to determine if dog size was a factor that affected the coorelation as well. Perhaps areas with more big dogs would have less burglaries than areas with a higher concentration of small dogs. 
+
+The Process:
+
+DOG REGISTRATION DATA
+Taking the data from the American Kennel Club, I got a list of all dog breeds and split them up into two files- one a list of big dogs, and the other a list of small/medium sized dogs, according to their designation. Using these lists the next step was to identify the breed of dog registered in the NYC Dog Licensing Data and determine if it is a big dog or a small dog, by running them through the dog breed and size files I created.  Once a certain breed was then known to be a small dog or big dog this information was used to sort, based on breed, the raw initial data. 
+
+
+CRIME DATA
+The first step was to filter the data based on crimes that occured during the years we had the dog records from. Then I filtered the crimes to only include ones that were either robberies/burglaries. 
+The crime data had the location of the crime in latitude and longitude, while the dog location data was in zip code form. Using the Geoquadtree I took all the latitude and longitude of the crime and changed it to the zip code located closest to the exact point of the crime. 
+
+
+The next step was to put all the data together. I create a pipe delimited file that had a list of every zip code, showed how many crimes happened in that zip code, how many dogs were registered to that zip code, what percent of the total dogs were big dogs.
+I had to get the population count for every zip code, to properly represent my findings in crime and dogs per capita.
+
+My Findings:
+No clear inverse corellation. 
