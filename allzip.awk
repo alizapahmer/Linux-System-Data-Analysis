@@ -1,3 +1,4 @@
+#the script to combine each of the filtered data sets 
 BEGIN{
     popAndZip= "uszipsv1.4.txt" 
     file= "crime_Zipcodes"
